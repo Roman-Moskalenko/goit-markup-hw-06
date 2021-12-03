@@ -441,8 +441,48 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
+        <form action="" class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-wrape">
+            <label class="modal-text">
+              Имя
+              <input type="name" name="user-name" class="modal-input" />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="modal-wrape">
+            <label class="modal-text">
+              Телефон
+              <input type="tel" name="user-tel" class="modal-input" />
+            </label>
+          </div>
+          <div class="modal-wrape">
+            <label class="modal-text">
+              Почта
+              <input type="email" name="user-email" class="modal-input" />
+            </label>
+          </div>
+          <label class="modal-text"
+            >Комментарий
+            <textarea
+              name="comment"
+              placeholder="Введите текст"
+              class="modal-text-comment"
+            ></textarea>
+          </label>
+          <label class="modal-policy">
+            <p class="modal-policy-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="modal-policy-link" href="">Условия договора</a>
+            </p>
+            <input type="checkbox" name="policy" />
+          </label>
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="18px" height="18px">
             <use href="./images/icons.svg.svg#icon-close"></use>
