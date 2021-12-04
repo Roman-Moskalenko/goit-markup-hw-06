@@ -445,26 +445,38 @@
       <div class="modal">
         <form action="" class="modal-form">
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="modal-wrape">
+          <div class="modal-container">
             <label class="modal-text">
               Имя
+              <span class="input-wrape">
               <input type="name" name="user-name" class="modal-input" />
               <svg class="modal-icon" width="18px" height="18px">
                 <use href="./images/icons.svg.svg#icon-person"></use>
               </svg>
             </label>
+            </span>
           </div>
-          <div class="modal-wrape">
+          <div class="modal-container">
             <label class="modal-text">
               Телефон
+              <span class="input-wrape">
               <input type="tel" name="user-tel" class="modal-input" />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg.svg#icon-phone"></use>
+              </svg>
             </label>
+            </span>
           </div>
-          <div class="modal-wrape">
+          <div class="modal-container">
             <label class="modal-text">
               Почта
+              <span class="input-wrape">
               <input type="email" name="user-email" class="modal-input" />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg.svg#icon-email"></use>
+              </svg>
             </label>
+            </span>
           </div>
           <label class="modal-text"
             >Комментарий
@@ -474,13 +486,18 @@
               class="modal-text-comment"
             ></textarea>
           </label>
-          <label class="modal-policy">
-            <p class="modal-policy-text">
+          <div class="modal-container">
+            <input type="checkbox" name="policy" class="modal-policy-check" id="policy"/>
+          <label lass="modal-policy-text" for="policy">
+            <span class="modal-check-item"> 
+            <!-- <svg class="modal-check-icon" width="11" height="8">
+              <use href="./images/icons.svg.svg#icon-icon-check"></use>
+            </svg> -->
+          </span>
               Соглашаюсь с рассылкой и принимаю
               <a class="modal-policy-link" href="">Условия договора</a>
-            </p>
-            <input type="checkbox" name="policy" />
           </label>
+          </div>
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
         <button type="button" class="modal-close" data-modal-close>
