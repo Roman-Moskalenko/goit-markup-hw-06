@@ -553,13 +553,61 @@ img {
   transition: color var(--transition-duration) var(--main-cubic);
 }
 .footer-contacts-mail:hover,
-.footer-contacts-mail :focus {
+.footer-contacts-mail:focus {
   color: var(--accent-color);
 }
 .footer-contacts-tell:hover,
-.footer-contacts-tell :focus {
+.footer-contacts-tell:focus {
   color: var(--accent-color);
 }
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-input-wrape {
+  margin-left: 95px;
+}
+.footer-input-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-input {
+  width: 360px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-right: 12px;
+}
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  background-color: var(--accent-color);
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* --------------------------------------------Portfolio-------------------- */
 
 .portfolio-filter {
@@ -712,7 +760,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .modal-text {
   font-weight: 400;
@@ -727,7 +775,7 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-left: 40px;
   outline: none;
   transition: border-color var(--transition-duration) var(--main-cubic);
@@ -750,6 +798,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  margin-bottom: 20px;
   transition: border-color var(--transition-duration) var(--main-cubic);
 }
 .modal-text-comment:focus {
@@ -788,9 +837,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
+  transition: background-color var(--transition-duration) var(--main-cubic),
+    border var(--transition-duration) var(--main-cubic);
 }
 .modal-check-icon {
   fill: #ffffff;
+}
+.modal-policy-check:checked + .modal-policy-text .modal-check-item {
+  background-color: var(--accent-color);
+  border: 0;
 }
 .modal-form-btn {
   width: 200px;
@@ -802,8 +858,15 @@ img {
   padding: 10px 55px;
   margin: 0 auto;
   display: block;
+  margin-top: 30px;
+  transition: filter var(--transition-duration) var(--main-cubic);
+  cursor: pointer;
 }
-.input-wrape {
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.modal-input-wrape {
   position: relative;
 }
 .modal-icon {
@@ -824,6 +887,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: fill var(--transition-duration) var(--main-cubic);
+}
+.modal-close:hover .modal-close-icon {
+  fill: var(--accent-color);
+}
+.modal-close:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
 .is-hidden {
   visibility: hidden;
